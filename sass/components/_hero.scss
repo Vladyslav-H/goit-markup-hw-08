@@ -1,0 +1,32 @@
+.hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  max-width: 1600px;
+  min-height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $accent-bacground;
+
+  text-align: center;
+}
+.hero__tytle {
+  margin-bottom: 30px;
+
+  color: $accent-title-color;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  @include fonts(uppercase, 900, 44px, 1.36, 0.06em);
+}
