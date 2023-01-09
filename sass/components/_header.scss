@@ -8,6 +8,9 @@
   display: flex;
   align-items: center;
 }
+.nav{
+  margin-left: 93px;
+}
 .header-page__logo {
   color: $accent-black-color;
 }
@@ -27,7 +30,7 @@
 }
 .nav__list {
   display: flex;
-  margin-left: 93px;
+  //margin-left: 93px;
 
   & .item:not(:last-child) {
     margin-right: 50px;
