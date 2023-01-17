@@ -1,23 +1,25 @@
 .clients__title {
-  margin-bottom: 50px;
-  color: $title-text-color;
-  // font-size: 36px;
-  // line-height: 1.17;
+  margin-bottom: 30px;
+  color: $title-text-color;  
   text-align: center;
-  @include fonts(null, null, 36px, 1.17, null);
+  @include fonts(null, 700, 28px, 1.18, null);
 }
+
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
 .clients__item {
   display: flex;
-  width: 170px;
   height: 92px;
 
-  & + & {
-    margin-left: 30px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 1 * 30px)/2);
   }
 }
+
 .clients__link {
   display: flex;
   align-items: center;
@@ -34,6 +36,7 @@
     border-color: $accent-text-color;
   }
 }
+
 .clients__icon {
   fill: $icons-color;
   transition: fill $animation;

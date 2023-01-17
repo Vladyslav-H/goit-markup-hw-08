@@ -1,18 +1,17 @@
 $gap: 0;
+
 body {
   background-color: $primary-bacground;
   color: $primary-text-color;
   font-family: $primary-font;
-  // font-size: 14px;
-  // line-height: 1.71;
-  // letter-spacing: 0.03em;
-
   @include fonts(null, null, 14px, 1.71, 00.03em);
 }
+
 ul {
   margin: $gap;
   padding: $gap;
 }
+
 p,
 h1,
 h2,

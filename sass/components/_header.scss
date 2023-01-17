@@ -1,97 +1,74 @@
 .header-page {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: $box-color;
-}
-.header-page__box,
-.nav {
-  display: flex;
-  align-items: center;
-}
-.nav{
-  margin-left: 93px;
-}
-.header-page__logo {
-  color: $accent-black-color;
-}
-.header-page__box .link {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $title-text-color;
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color $animation;
-  @include fonts(null, 500, 14px, 1.14, 0.02em);
-}
-.nav__list {
-  display: flex;
-  //margin-left: 93px;
-
-  & .item:not(:last-child) {
-    margin-right: 50px;
-  }
-  & .link:hover,
-  & .link:focus {
-    color: $accent-text-color;
-  }
-}
-.nav__list .link.current {
-  color: $accent-text-color;
-}
-.current::after {
-  position: absolute;
-  bottom: -1%;
-
-  display: block;
-
-  width: 100%;
-  height: 4px;
-  background-color: $accent-text-color;
-  border-radius: 2px;
-  content: "";
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $box-color;    
 }
 
-.contacts-links {
-  display: flex;
-  margin-left: auto;
-
-  & .link {
+.header-page__box {
+    height: 60px;
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: $primary-text-color;
-    // font-weight: 500;
-    // font-size: 14px;
-    // line-height: 1.14;
-    // letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color $animation;
-    @include fonts(null, 500, 14px, 1.14, 0.02em);
-  }
+    justify-content: space-between;
+}
+ 
+//.nav {
+   // margin-bottom: 306px;
+//}
 
-  & .link:hover,
-  & .link:focus {
-    color: $accent-text-color;
-  }
+.contacts-links {    
+    margin-bottom: 64px;
+    & .link {
+        text-decoration: none;
+        color: $primary-text-color;
+        @include fonts(none, 500, 24px, 1.17, 0.02em);
+    }
+    & .phone {
+        display: inline-block;        
+        color: $accent-text-color;
+        @include fonts(none, 500, 34px, 1.18, 0.02em);
+    }
+    & .item:first-child {
+        margin-bottom: 32px;
+    }
 }
 
-.contacts-links .item:not(:last-child) {
-  margin-right: 50px;
+.menu-links {
+    display: inline-flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    & .link {
+        text-decoration: none;
+        color: $accent-text-color;
+        @include fonts(none, 500, 18px, 1.22, 0.02em);
+    }
 }
 
 .header-page__icon {
-  margin-right: 10px;
-  fill: $primary-text-color;
-  transition: fill $animation;
+@media screen and (max-width: 767px) {
+    display: none;
+    }
+}
 
-  .contacts-links .link:hover &,
-  .contacts-links .link:focus & {
-    fill: $accent-text-color;
-  }
+.menu-links .item:not(:last-child)::after {
+    content: "";
+    height: 22px;
+    width: 1px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ 
+.nav__list .link {
+    text-decoration: none;
+    color: $title-text-color;
+    @include fonts(none, 500, 40px, 1.18, 0.02em);
+}
+
+.nav__list .link.current {
+    color: $accent-text-color;
+}
+
+.nav__list .item:not(:last-child){
+    margin-bottom: 32px;
 }
