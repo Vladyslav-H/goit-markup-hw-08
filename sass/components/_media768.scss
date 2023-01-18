@@ -1,3 +1,5 @@
+//HEADER
+
 @media screen and (min-width: 768px) {
     .menu-toggle, .menu-links {
     display: none;
@@ -64,11 +66,28 @@
         margin-right: 8px;
         fill: $primary-text-color;
         transition: fill $animation;
-    }
     
+
     .contacts-links .link:hover &,
     .contacts-links .link:focus & {
       fill: $accent-text-color;
-    }
-  
+    }}
+
+//FEATURE
+
+.feature__list {
+    display: flex;
+    gap: 30px;
+   flex-wrap: wrap;      
+}
+
+.feature__item {
+    width: calc((100% - 1 * 30px)/2);
+}
+
+//CLIENTS
+
+.clients__item {
+    width: calc((100% - 2 * 30px)/3);
+}
 }

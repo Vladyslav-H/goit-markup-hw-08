@@ -617,12 +617,7 @@ h6 {
 .clients__item {
   display: flex;
   height: 92px;
-}
-
-@media screen and (max-width: 767px) {
-  .clients__item {
-    width: calc((100% - 1 * 30px)/2);
-  }
+  width: calc((100% - 1 * 30px)/2);
 }
 
 .clients__link {
@@ -986,6 +981,17 @@ h6 {
   .contacts-links .link:hover .header-page__icon,
   .contacts-links .link:focus .header-page__icon {
     fill: #2196f3;
+  }
+  .feature__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .feature__item {
+    width: calc((100% - 1 * 30px)/2);
+  }
+  .clients__item {
+    width: calc((100% - 2 * 30px)/3);
   }
 }
 /*# sourceMappingURL=main.css.map */
