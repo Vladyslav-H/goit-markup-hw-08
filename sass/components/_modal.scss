@@ -148,7 +148,7 @@
 
 .checkbox__label {
   display: flex;
-  //align-items: center; 
+  align-items: center; 
   color: $primary-text-color;
   @include fonts(null, null, 12px, 1.17, 0.03em);
 
@@ -170,7 +170,7 @@
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 1px solid $accent-black-color;
+  border: 2px solid $accent-black-color;
   border-radius: 2px;
   fill: $accent-title-color;
   background-origin: content-box;

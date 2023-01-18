@@ -433,6 +433,7 @@ h6 {
 
 .checkbox__label {
   display: flex;
+  align-items: center;
   color: #757575;
   font-size: 12px;
   line-height: 1.17;
@@ -456,7 +457,7 @@ h6 {
   margin-right: 7px;
   width: 16px;
   height: 15px;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
   border-radius: 2px;
   fill: #ffffff;
   background-origin: content-box;
@@ -772,8 +773,10 @@ h6 {
   color: #212121;
 }
 
-.portfolio__item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio__link {
@@ -1003,6 +1006,22 @@ h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .filters {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .portfolio__item {
+    width: calc((100% - 1 * 30px)/2);
+  }
+  .portfolio__meta {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

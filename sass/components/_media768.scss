@@ -105,4 +105,26 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+//PORTFOLIO
+
+.filters {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__item {
+    width: calc((100% - 1 * 30px)/2);
+  }
+
+  .portfolio__meta {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
