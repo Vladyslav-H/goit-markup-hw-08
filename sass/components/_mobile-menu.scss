@@ -10,10 +10,6 @@
     cursor: pointer;
     border: none;
     outline: none;
-     
-    @media screen and (min-width: 768px) {
-        display: none;
-    }
 }
 
 .menu-toggle:hover, 
@@ -22,6 +18,12 @@
 }
 
 .menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: 767px) {
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,13 +34,6 @@
     background-color: $accent-title-color;
     transform: translateX(100%);
     transition: $animation;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @media screen and (min-width: 768px) {
-        display: none;
     }
 }
 

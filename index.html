@@ -21,31 +21,32 @@
                 <use href="./images/symbol-defs.svg#icon-menu"></use>    
                 </svg>
             </button>
-        <div class="menu-container js-menu-container" id="mobile-menu">
+            <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu"><svg class="" width="19px" height="19px">
                 <use href="./images/symbol-defs.svg#icon-cross"></use>
             </svg></button>
             <!--Меню навигации-->
-             <nav class="nav">
-                 <ul class="nav__list nolist">
-                <li class="item"><a class="link current" href="./index.html" >Студия</a></li>
-                <li class="item"><a class="link" href="./portfolio.html" >Портфолио</a></li>
-                <li class="item"><a class="link" href="" >Контакты</a></li>
-            </ul>
-            </nav>
-                <div><ul class="contacts-links nolist">
+               <nav class="nav">
+                <ul class="nav__list nolist">
+                <li class="nav__item"><a class="nav__link current" href="./index.html" >Студия</a></li>
+                <li class="nav__item"><a class="nav__link" href="./portfolio.html" >Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link" href="" >Контакты</a></li>
+                </ul>
+               </nav>
+                <div>
+                    <ul class="contacts-links nolist">
                     <li class="item">
                         <a class="link  phone" href="tel:+380961111111">
-                            <svg class="icon header-page__icon" width="10px" height="16px">
-                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
+                        <svg class="icon header-page__icon" width="10px" height="14px">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
                     </li>
                     <li class="item">
                         <a class="link" href="mailto:info@devstudio.com">
-                            <svg class="icon header-page__icon" width="16px" height="12px">
-                                <use href="./images/symbol-defs.svg#icon-mail">
-                                </use>
-                            </svg>info@devstudio.com</a>
+                        <svg class="icon header-page__icon" width="14px" height="10px">
+                        <use href="./images/symbol-defs.svg#icon-mail">
+                        </use>
+                        </svg>info@devstudio.com</a>
                     </li>
                 </ul>
                 <ul class="menu-links nolist">
@@ -54,9 +55,9 @@
                     <li class="item"><a class="link" href="">Facebook</a></li>
                     <li class="item"><a class="link" href="">LinkedIn</a></li>
                 </ul>
-            </div>
+              </div>
             </div> 
-            </div>
+        </div>
     </header>
     <main>
         <!--Герой-->
@@ -299,7 +300,7 @@
 <!-- Подвал -->
     <footer class="footer-page">
         <div class="container footer-page__flex">
-            <div>
+            <div class="address-wrapper">
                 <a href="./index.html" class="logo">Web<span class="footer-page__logo">Studio</span></a>
                 <address class="contacts">
                     <ul class="contacts__list nolist">
@@ -316,7 +317,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="socialsLinks-wrapper">
                 <p class="socials__title">Присоединяйтесь</p>
                 <ul class="socials nolist">
                     <li class="socials__item"><a class="socials__link" href="" aria-label="Инстаграм"><svg
@@ -337,7 +338,7 @@
                             </svg></a></li>
                 </ul>
             </div>
-            <div>
+            <div class="subscription-wrapper">
                     <p class="subscription__title">Подпишитесь на рассылку</p>
                     <form class="subscription">                        
                         <input class="subscription__input" type="email" name="mail" placeholder="E-mail">
