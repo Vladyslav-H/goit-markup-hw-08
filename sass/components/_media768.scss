@@ -90,4 +90,19 @@
 .clients__item {
     width: calc((100% - 2 * 30px)/3);
 }
+
+//FOOTER
+
+.foter-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscription__input {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
