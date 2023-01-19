@@ -1,8 +1,8 @@
 .socials {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .socials__icon {
+  display: flex;
+  justify-content: center;
+
+  &__icon {
     fill: $accent-title-color;
   }
+}

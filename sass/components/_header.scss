@@ -1,75 +1,55 @@
 .header-page {
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: $box-color;    
-}
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: $box-color;
 
-.header-page__box {
+  &__box {
     height: 60px;
     display: flex;
     align-items: center;
-    
+  }
 }
- 
-.contacts-links {    
-    //margin-bottom: 64px;
-    & .link {
-        text-decoration: none;
-        color: $primary-text-color;
-        @include fonts(none, 500, 24px, 1.17, 0.02em);
-    }
-    & .phone {
-        display: inline-block;        
-        color: $accent-text-color;
-        @include fonts(none, 500, 34px, 1.18, 0.02em);
-    }   
+
+.contacts-links {
+  & .link {
+    text-decoration: none;
+    color: $primary-text-color;
+    @include fonts(none, 500, 24px, 1.17, 0.02em);
+  }
+  & .phone {
+    display: inline-block;
+    color: $accent-text-color;
+    @include fonts(none, 500, 34px, 1.18, 0.02em);
+  }
 }
 
 .menu-links {
-    display: inline-flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
 
-    & .link {
-        text-decoration: none;
-        color: $accent-text-color;
-        @include fonts(none, 500, 18px, 1.22, 0.02em);
-    }
-}
-
-.header-page__icon {
-@media screen and (max-width: 767px) {
-    display: none;
-    }
+  & .link {
+    text-decoration: none;
+    color: $accent-text-color;
+    @include fonts(none, 500, 18px, 1.22, 0.02em);
+  }
 }
 
 .menu-links .item:not(:last-child)::after {
-    content: "";
-    height: 22px;
-    width: 1px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);    
-    margin-left: 10px;
-    margin-right: 10px;
+  content: "";
+  height: 22px;
+  width: 1px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+  margin-right: 10px;
 }
- 
+
 .nav__link {
-    text-decoration: none;
-    color: $title-text-color;
-    @include fonts(none, 500, 40px, 1.18, 0.02em);
-}
+  text-decoration: none;
+  color: $title-text-color;
+  @include fonts(none, 500, 40px, 1.18, 0.02em);
 
-.nav__link.current {
+  &.current {
     color: $accent-text-color;
+  }
 }
-
-@media screen and (max-width: 767px) {
-    .nav__item:not(:last-child){
-        margin-bottom: 32px;
-}
-.contacts-links {    
-    margin-bottom: 64px;}
-    & .item:first-child {
-        margin-bottom: 32px;
-    }
-}
-

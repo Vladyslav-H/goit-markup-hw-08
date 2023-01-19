@@ -1,0 +1,151 @@
+@media screen and (min-width: 1200px) {
+  //CONTAINER
+
+  .container {
+    width: 1200px;
+  }
+
+  //SECTION
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  //HEADER
+
+  .header-page__box {
+    column-gap: 93px;
+  }
+
+  .menu-container {
+    column-gap: 311px;
+  }
+
+  .contacts-links {
+    flex-direction: row-reverse;
+    column-gap: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    & .link {
+      @include fonts(none, 500, 14px, 1.14, 0.02em);
+    }
+  }
+  .header-page__icon {
+    margin-right: 10px;
+  }
+  //LOGO
+
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  //HERO
+
+  .hero {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero/hero-decs/hero-desc.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/hero/hero-decs/hero-desc@2x.jpg");
+    }
+
+    &__tytle {
+      @include fonts(uppercase, 900, 44px, 1.36, 0.06em);
+    }
+  }
+
+  //FEATURE
+
+  .feature__list {
+    font-weight: nowrap;
+  }
+
+  .feature__item {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+
+  //TEAM
+
+  .team__title {
+    margin-bottom: 50px;
+    @include fonts(null, 700, 36px, 1.17, null);
+  }
+
+  .members__meta {
+    padding-bottom: 30px;
+  }
+
+  //CLIENTS
+
+  .clients__title {
+    margin-bottom: 50px;
+    @include fonts(null, 700, 36px, 1.17, null);
+  }
+
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+
+  //FOOTER
+
+  .footer-page__flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-wrapper {
+    column-gap: 70px;
+  }
+
+  .subscription {
+    display: flex;
+    gap: 12px;
+
+    &__input {
+      width: 358px;
+    }
+  }
+
+  .contacts__item:not(:first-child) {
+    margin-top: 9px;
+  }
+
+  //PORTFOLIO
+
+  .filters {
+    margin-bottom: 50px;
+  }
+
+  .portfolio__item {
+    width: calc((100% - 2 * 30px) / 3);
+  }
+
+  //MODAL
+
+  .modal {
+    width: 528px;
+  }
+
+  .checkbox__label {
+    @include fonts(null, null, 14px, 1.71, 0.03em);
+  }
+}
