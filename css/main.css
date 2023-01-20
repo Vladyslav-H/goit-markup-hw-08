@@ -606,6 +606,11 @@ h6 {
   fill: #ffffff;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .socialsLinks-wrapper {
+    padding-top: 5px;
+  }
+}
 .filters {
   display: flex;
   justify-content: flex-start;
@@ -908,7 +913,6 @@ h6 {
   .footer-wrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
