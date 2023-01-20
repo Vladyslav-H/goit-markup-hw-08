@@ -1,13 +1,13 @@
 @mixin fonts(
-  $text-transform,
-  $font-weight,
-  $font-size,
-  $line-height,
-  $letter-spacing
+  $t-t,
+  $f-w,
+  $f-s,
+  $l-h,
+  $l-s
 ) {
-  text-transform: $text-transform;
-  font-weight: $font-weight;
-  font-size: $font-size;
-  line-height: $line-height;
-  letter-spacing: $letter-spacing;
+  text-transform: $t-t;
+  font-weight: $f-w;
+  font-size: $f-s;
+  line-height: $l-h;
+  letter-spacing: $l-s;
 }
