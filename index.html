@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Шапка сайта-->
+    <!-- HEADER -->
     <header class="header-page">
       <div class="container header-page__box">
         <a href="./index.html" class="logo"
@@ -37,7 +37,7 @@
               <use href="./images/symbol-defs.svg#icon-cross"></use>
             </svg>
           </button>
-          <!--Меню навигации-->
+          <!-- NAVIGATION -->
           <nav class="nav">
             <ul class="nav__list nolist">
               <li class="nav__item">
@@ -54,27 +54,27 @@
           <div>
             <ul class="contacts-links nolist">
               <li class="item">
+                <a class="link" href="mailto:info@devstudio.com">
+                  <svg
+                    class="icon header-page__icon"
+                    width="16px"
+                    height="12px"
+                  >
+                    <use href="./images/symbol-defs.svg#icon-mail"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
                 <a class="link phone" href="tel:+380961111111">
                   <svg
                     class="icon header-page__icon"
                     width="10px"
-                    height="14px"
+                    height="16px"
                   >
                     <use
                       href="./images/symbol-defs.svg#icon-smartphone"
                     ></use></svg
                   >+38 096 111 11 11</a
-                >
-              </li>
-              <li class="item">
-                <a class="link" href="mailto:info@devstudio.com">
-                  <svg
-                    class="icon header-page__icon"
-                    width="14px"
-                    height="10px"
-                  >
-                    <use href="./images/symbol-defs.svg#icon-mail"></use></svg
-                  >info@devstudio.com</a
                 >
               </li>
             </ul>
@@ -89,7 +89,7 @@
       </div>
     </header>
     <main>
-      <!--Герой-->
+      <!-- HERO -->
       <section class="hero">
         <div class="container">
           <h1 class="hero__tytle">
@@ -100,7 +100,7 @@
             Заказать услугу
           </button>
         </div>
-        <!-- Mодалка -->
+        <!-- MODAL -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="modal__button" data-modal-close>
@@ -159,36 +159,32 @@
                   placeholder="Введите текст"
                 ></textarea>
               </div>
-              <div class="checkbox">
-                <label class="checkbox__label">
-                  <input
-                    class="checkbox__input"
-                    type="checkbox"
-                    name="agreement conditions"
-                  />
-                  <div>
-                    <svg class="checkbox__icon" width="16px" height="15px">
-                      <use href="./images/symbol-defs.svg#icon-check"></use>
-                    </svg>
-                  </div>
-                  <span class="chekbox-text">
-                    Соглашаюсь с рассылкой и принимаю
-                    <a
-                      class="checkbox__link"
-                      href=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Условия договора</a
-                    >
-                  </span>
-                </label>
-              </div>
+              <label class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  name="agreement conditions"
+                />
+                <svg class="checkbox__icon" width="16px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+                <span class="chekbox-text">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a
+                    class="checkbox__link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Условия договора</a
+                  >
+                </span>
+              </label>
               <button type="submit" class="button">Отправить</button>
             </form>
           </div>
         </div>
       </section>
-      <!--Особенности-->
+      <!-- FEATURE -->
       <section class="feature section">
         <h2 class="feature__title">Особенности</h2>
         <ul class="feature__list container nolist">
@@ -242,7 +238,7 @@
           </li>
         </ul>
       </section>
-      <!--Чем мы занимаемся-->
+      <!-- WORK -->
       <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
@@ -296,7 +292,7 @@
           </ul>
         </div>
       </section>
-      <!--Наша команда-->
+      <!-- TEAM -->
       <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
@@ -640,7 +636,7 @@
           </ul>
         </div>
       </section>
-      <!-- Постоянные клиенты -->
+      <!-- CLIENTS -->
       <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
@@ -709,7 +705,7 @@
         </div>
       </section>
     </main>
-    <!-- Подвал -->
+    <!-- FOOTER -->
     <footer class="footer-page">
       <div class="container footer-page__flex">
         <div class="footer-wrapper">

@@ -11,6 +11,10 @@
 }
 
 .contacts-links {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 32px;
+
   & .link {
     text-decoration: none;
     color: $primary-text-color;
@@ -19,7 +23,7 @@
   & .phone {
     display: inline-block;
     color: $accent-text-color;
-    @include fonts(none, 500, 34px, 1.18, 0.02em);
+    @include fonts(none, 500, 25px, 1.18, 0.02em);
   }
 }
 
@@ -31,7 +35,7 @@
   & .link {
     text-decoration: none;
     color: $accent-text-color;
-    @include fonts(none, 500, 18px, 1.22, 0.02em);
+    @include fonts(null, 500, 18px, 1.22, 0.02em);
   }
 }
 
@@ -47,7 +51,7 @@
 .nav__link {
   text-decoration: none;
   color: $title-text-color;
-  @include fonts(none, 500, 40px, 1.18, 0.02em);
+  @include fonts(null, 500, 40px, 1.18, 0.02em);
 
   &.current {
     color: $accent-text-color;

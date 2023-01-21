@@ -25,7 +25,7 @@
     margin-top: 27px;
     color: $accent-title-color;
     text-align: center;
-    @include fonts(uppercase, 700, 14px, 1.14, 0.03em);
+    @include fonts(uppercase, 700, null, 1.14, null);
   }
 }
 

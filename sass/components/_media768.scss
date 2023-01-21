@@ -48,18 +48,15 @@
   }
 
   .contacts-links {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    flex-direction: column;
     row-gap: 10px;
 
     & .link {
-      @include fonts(null, 500, 12px, 1.17, 0.02em);
-      color: inherit;
       display: flex;
-      transition: color $animation;
       align-items: center;
+      color: inherit;
+      transition: color $animation;
+      @include fonts(null, 500, 12px, 1.17, 0.02em);
     }
 
     & .link:hover,
@@ -172,9 +169,19 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+  //FOOTER
+
   .footer-page__flex {
     flex-direction: column;
     row-gap: 60px;
+  }
+
+     //HEADER
+
+  .contacts-links {
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 

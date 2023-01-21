@@ -8,13 +8,10 @@
     height: 50px;
     border-radius: 4px;
     border: transparent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
     color: $accent-title-color;
     background-color: $accent-text-color;
     font-family: inherit;
     box-shadow: 0px 4px 4px $shadow-color;
+    @include fonts(null, 700, 16px, 1.87, 00.06em);
     }
   

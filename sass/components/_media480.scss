@@ -10,6 +10,9 @@
   .hero {
     width: 480px;
   }
+  .contacts-links .phone {
+    @include fonts(none, 500, 34px, 1.18, 0.02em);
+  }
 }
 
 @media screen and (max-width: 767px) {

@@ -19,16 +19,16 @@
   }
 
   .menu-container {
-    column-gap: 311px;
+    column-gap: 309px;
   }
 
   .contacts-links {
-    flex-direction: row-reverse;
+    flex-direction: row;
     column-gap: 30px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
     & .link {
+      padding-top: 32px;
+      padding-bottom: 32px;
       @include fonts(none, 500, 14px, 1.14, 0.02em);
     }
   }
@@ -38,8 +38,7 @@
   //LOGO
 
   .logo {
-    font-size: 26px;
-    line-height: 1.19;
+    @include fonts(null, null, 26px, 1.19, null);
   }
 
   //HERO
@@ -71,6 +70,12 @@
     &__tytle {
       @include fonts(uppercase, 900, 44px, 1.36, 0.06em);
     }
+  }
+
+  //MODAL
+
+  .checkbox {
+    @include fonts(null, null, 14px, 1.71, null);
   }
 
   //FEATURE

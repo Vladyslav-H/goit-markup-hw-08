@@ -2,8 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $accent-bacground;
-
-  @include fonts(null, null, 14px, 1.71, null);
 }
 
 .contacts {
@@ -33,20 +31,20 @@
   margin-bottom: 20px;
   color: $accent-title-color;
 
-  @include fonts(uppercase, 700, 14px, 1.14, null);
+  @include fonts(uppercase, 700, null, 1.14, null);
 }
 
 .subscription {
   &::placeholder {
     color: $accent-hidden-color;
 
-    @include fonts(null, null, 16px, 1.25, 0.03em);
+    @include fonts(null, null, 16px, 1.25, null);
   }
   &__title {
     margin-bottom: 20px;
     color: $accent-title-color;
 
-    @include fonts(uppercase, 700, 14px, 1.14, null);
+    @include fonts(uppercase, 700, null, 1.14, null);
   }
 
   &__input {

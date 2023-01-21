@@ -87,5 +87,5 @@
 
 .portfolio__text {
   color: $accent-title-color;
-  @include fonts(null, null, 18px, 1.56, 0.03em);
+  @include fonts(null, null, 18px, 1.56, null);
 }
